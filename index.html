@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study pack</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a class="home" href="index.html" aria-label="Home" title="Home">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z"/></svg>
+    </a>
+    <span class="brand">Study pack</span>
+  </nav>
+</header>
+<main id="top">
+<h1>Study pack</h1>
+<p class="lead">Choose a standard and a subject. Each chapter has summary cards, exercise solutions and two mock exams.</p>
+<section class="chapter-entry">
+  <h2>Standard 6</h2>
+  <div class="links">
+    <a class="button" href="standard-6/science-curiosity/index.html">Science Curiosity</a>
+  </div>
+</section>
+</main>
+<script>
+// Close an open breadcrumb list when the reader clicks elsewhere.
+document.addEventListener("click", (event) => {
+  for (const menu of document.querySelectorAll(".menu[open]")) {
+    if (!menu.contains(event.target)) menu.open = false;
+  }
+});
+</script>
+</body>
+</html>
